@@ -1,47 +1,27 @@
-const stack = document.querySelector('.stack');
-const gallery = document.querySelector('.gallery');
+const singlePattern = document.getElementById('pattern0');
+const patternGrid = document.querySelector('.pattern-grid');
+const patterns = document.querySelectorAll('.pattern-grid .pattern');
 
-function createStackImages() {
-    for (let i = 1; i <= 55; i++) {
-        const img = document.createElement('img');
-        img.src = `assets/trimmed${i}.webp`;
-        img.alt = `Manhole image ${i}`;
+const patternImages = [
+    "assets/pattern1.png",
+    "assets/pattern2.png",
+    "assets/pattern3.png",
+    "assets/pattern4.png"
+];
 
-        const angle = (i / 55) * (Math.PI * 2);
-        const radius = 100;
-        const x = Math.cos(angle) * radius;
-        const y = Math.sin(angle) * radius;
+let currentPatternIndex = 0;
 
-        img.style.transform = `translate(${x}px, ${y}px)`; 
-        stack.appendChild(img);
+singlePattern.addEventListener("click", () => {
+    singlePattern.style.display = 'none';
+    patternGrid.style.display = 'grid';
+});
 
-        img.addEventListener('click', function() {
-            showGallery();
+patterns.forEach(pattern => {
+    pattern.addEventListener("click", () => {
+        currentPatternIndex = (currentPatternIndex + 1) % patternImages.length;
+
+        patterns.forEach(p => {
+            p.src = patternImages[currentPatternIndex];
         });
-    }
-}
-
-function showGallery() {
-    stack.style.display = 'none';
-    gallery.innerHTML = '';
-    gallery.style.display = 'grid';
-
-    for (let j = 1; j <= 55; j++) {
-        const galleryImg = document.createElement('img');
-        galleryImg.src = `assets/trimmed${j}.webp`;
-        galleryImg.alt = `Manhole image ${j}`;
-        gallery.appendChild(galleryImg);
-    }
-}
-
-function initializeImages() {
-    const images = document.querySelectorAll('.stack img');
-    images.forEach((img, index) => {
-        setTimeout(() => {
-            img.style.opacity = 1;
-        }, index * 70);
     });
-}
-
-createStackImages();
-window.onload = initializeImages;
+});

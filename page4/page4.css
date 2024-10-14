@@ -1,0 +1,88 @@
+body {
+    font-family: "aktiv-grotesk", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+}
+
+.home-link, 
+.page1-link,
+.page2-link, 
+.page3-link {
+    font-size: 18px;
+    color: #202020;
+    text-decoration: none;
+}
+
+.page4-link {
+    font-size: 18px;
+    color: #202020;
+    text-decoration: underline;
+}
+
+.home-link:hover, 
+.page1-link:hover, 
+.page2-link:hover, 
+.page3-link:hover,
+.page4-link:hover {
+    color: blue;
+}
+
+.stack {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 255px;
+}
+
+.stack img {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery {
+    gap: 3px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    position: absolute;
+    overflow: visible;
+    align-items: center;
+    justify-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-top: 55px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.gallery img {
+    width: 85%;
+    max-width: 150px;
+    transition: transform 0.6s ease;
+    position: relative;
+}
+
+.gallery img:hover {
+    transform: scale(5.5);
+    z-index: 10;
+}

@@ -3,32 +3,46 @@ body {
     margin: 0;
     padding: 20px;
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100vh; 
 }
 
-.home-link, .page2-link {
-    position: absolute;
-    bottom: 20px;
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+}
+
+.home-link, 
+.page2-link, 
+.page3-link,
+.page4-link  {
     font-size: 18px;
-    color: rgb(22, 22, 22);
+    color: #202020;
     text-decoration: none;
 }
 
-.home-link:hover, .page2-link:hover {
+.page1-link {
+    font-size: 18px;
+    color: #202020;
+    text-decoration: underline;
+}
+
+.home-link:hover, 
+.page1-link:hover, 
+.page2-link:hover, 
+.page3-link:hover,
+.page4-link:hover {
     color: blue;
-}
-
-.home-link {
-    left: 20px;
-}
-
-.page2-link {
-    right: 20px;
 }
 
 p {
     font-family: "aktiv-grotesk", sans-serif;
     font-weight: 700;
     font-style: normal;
+    margin-bottom: 100px;
 }
 
 .top-text {
@@ -39,5 +53,4 @@ p {
 .bottom-text {
     font-size: 25px;
     color:black;
-    padding-top: 50px;
 }
