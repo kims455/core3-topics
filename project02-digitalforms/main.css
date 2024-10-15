@@ -5,8 +5,9 @@ body {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
-    height: 100vh; 
+    justify-content: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .links-container {
@@ -19,16 +20,10 @@ body {
 .page1-link,
 .page2-link, 
 .page3-link,
-.page4-link  {
+.page4-link {
     font-size: 18px;
     color: #202020;
     text-decoration: none;
-}
-
-.home-link {
-    font-size: 18px;
-    color: #202020;
-    text-decoration: underline;
 }
 
 .home-link:hover, 
@@ -48,6 +43,7 @@ body {
     width: 100%;
     overflow: hidden;
     cursor: pointer;
+    transform: translateY(-30px);
 }
 
 @keyframes enlargeEllipse {
@@ -64,7 +60,7 @@ body {
 }
 
 #flipbookImage {
-    width: 900px; 
+    width: 900px;
     height: 900px;
     border-radius: 50%;
     object-fit: cover;
@@ -124,4 +120,23 @@ body {
     color: #202020;
     margin: 0;
     line-height: 1.2;
+}
+
+.colophon {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 450px;
+    text-align: center;
+    color: #575757;
+    font-size: 12px;
+}
+
+.colophon .title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.colophon .line {
+    font-size: 11px;
+    margin: 5px 0;
 }
