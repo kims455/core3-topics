@@ -44,7 +44,7 @@ body {
     max-width: 800px;
     margin: 15px auto;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 60px;
 }
 
 /* h3 {
@@ -54,8 +54,8 @@ body {
 } */
 
 .instructions {
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 16px;
+    margin-bottom: 48px;
     color: #202020;
 }
 
@@ -65,7 +65,7 @@ body {
     grid-template-rows: repeat(4, 133px);
     gap: 13px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .card {
@@ -98,7 +98,7 @@ body {
 }
 
 .card-front {
-    background: radial-gradient(circle, #c9daea, #eef2f3);
+    background: radial-gradient(circle, #d3e2f1, #eef2f3);
 }
 
 .card-back {
@@ -124,7 +124,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 18px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
