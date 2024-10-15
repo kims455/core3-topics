@@ -55,7 +55,7 @@ function checkForMatch() {
         matches++;
         flippedCards = [];
         if (matches === images.length) {
-            setTimeout(() => alert('Congratulations! You matched all of them!'), 200);
+            setTimeout(() => alert('Congratulations! You found all the matches and explored the designs of 10 manholes :)'), 200);
         }
     } else {
         setTimeout(() => {

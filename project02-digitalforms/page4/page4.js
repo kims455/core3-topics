@@ -34,8 +34,17 @@ $(document).ready(function() {
                 alt: `Gallery Manhole image ${j}`,
                 loading: 'lazy'
             });
-            
+
             $('.gallery').append($galleryImg);
+
+            $galleryImg.on('click', function() {
+                let $this = $(this);
+                $this.addClass('enlarged');
+
+                setTimeout(function() {
+                    $this.removeClass('enlarged');
+                }, 3500);
+            });
         }
     }
 

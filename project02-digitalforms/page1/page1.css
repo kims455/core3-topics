@@ -47,10 +47,29 @@ p {
 
 .top-text {
     font-size: 50px;
-    color:blue;
+    color: #202020;
 }
 
 .bottom-text {
     font-size: 25px;
-    color:black;
+    color: #202020;
+}
+
+.coordinate {
+    position: absolute;
+    font-size: 18px;
+    color: blue;
+    cursor: pointer;
+}
+
+.coordinates-container {
+    position: relative;
+    padding: 10px;
+    width: 1734px;
+    height: 3200px;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 50px;
 }
