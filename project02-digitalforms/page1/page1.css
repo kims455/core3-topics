@@ -26,6 +26,7 @@ body {
 
 .page1-link {
     font-size: 18px;
+    font-weight: 600;
     color: #202020;
     text-decoration: underline;
 }
