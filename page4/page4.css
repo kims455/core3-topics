@@ -86,3 +86,29 @@ body {
     transform: scale(5.5);
     z-index: 10;
 }
+
+.coordinates-display {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    display: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.manholes-moving {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    background-image: url('assets/resized1.webp'); /* Set this dynamically via JS */
+    background-size: cover;
+    border-radius: 50%;
+    transition: all 1s ease;
+    z-index: 100;
+}
