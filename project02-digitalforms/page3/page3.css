@@ -71,10 +71,11 @@ body {
 .card {
     width: 120px;
     height: 120px;
-    border-radius: 10px;
+    border-radius: 12px;
     cursor: pointer;
     perspective: 1000px;
     position: relative;
+    border: 2px solid black;
 }
 
 .card-inner {
@@ -87,6 +88,8 @@ body {
 
 .card.flipped .card-inner {
     transform: rotateY(180deg);
+    /* border-radius: 12px;
+    border: 2px solid blue; */
 }
 
 .card-front, .card-back {
@@ -98,26 +101,30 @@ body {
 }
 
 .card-front {
-    background: radial-gradient(circle, #d3e2f1, #eef2f3);
+    background: black;
+}
+
+.card-front:hover {
+    background: blue;
 }
 
 .card-back {
     background: no-repeat center/cover;
     transform: rotateY(180deg);
-}
+} 
 
 #restart-button {    
     padding: 30px 12px;
-    background-color: #c9daea;
-    color: white;
-    border: none;
+    color: black;
     cursor: pointer;
     font-size: 18px;
     border-radius: 1000px;
+    border: 2px solid black;
 }
 
 #restart-button:hover {
-    background-color: #D8C4B2;
+    color: blue;
+    border: 2px solid blue;
 }
 
 .game-info {

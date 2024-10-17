@@ -17,7 +17,7 @@ body {
 .home-link, 
 .page1-link,
 .page3-link,
-.page4-link  {
+.page4-link {
     font-size: 18px;
     color: #202020;
     text-decoration: none;
@@ -53,6 +53,16 @@ body {
     height: auto;
     margin-top: 360px;
     cursor: pointer;
+    animation: enlarge 3s infinite ease-in-out;
+}
+
+@keyframes enlarge {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
 }
 
 .pattern-grid {
